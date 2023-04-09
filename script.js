@@ -106,7 +106,7 @@ start.onclick = function () {
     isstop = setInterval(timer, 1000);
 }
 stope.onclick = function () {
-    clearInterval(isstop)
+    clearInterval(isstop);
 }
  // day < 10 ? day = '0' + day : day = day;
     // hr < 10 ? hr = '0' + hr : hr = hr;
