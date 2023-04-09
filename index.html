@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTDOWN</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="name">Singupalli Kartik</div>
+
+        <div class="remind"><button class="reminder"><i class="fa-solid fa-bell"></i>remind me</button></div>
+        <div class="ul">
+            <ul>
+                <li><a href="index.html">Countdown</a></li>
+                <li><a href="stopwatch.html">stopwatch</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            countdown
+        </header>
+        <div class="centere ">
+            <div class="timee">
+                <ul>
+                    <li class="value">day</li>
+                    <li class="value">hrs</li>
+                    <li class="value">min</li>
+                    <li class="value">sec</li>
+                </ul>
+                <ul>
+                    <input type="number" placeholder=" day" name="day" id="iday">
+                    <p>:</p>
+                    <input type="number" placeholder=" hours" name="hours" id="ihours">
+                    <p>:</p>
+                    <input type="number" placeholder=" minute" name="minute" id="iminute">
+                    <p>:</p>
+                    <input type="number" placeholder=" seconds" name="second" id="isecond">
+                </ul>
+                <div class="start">
+
+                    <button class="submit">submit</button>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="center">
+            <div class="time">
+                <ul>
+                    <li class="value">day</li>
+                    <li class="value">hrs</li>
+                    <li class="value">min</li>
+                    <li class="value">sec</li>
+                </ul>
+                <ul>
+                    <li class="day">00</li>
+                    <p>:</p>
+                    <li class="hrs">00</li>
+                    <p>:</p>
+                    <li class="min">00</li>
+                    <p>:</p>
+                    <li class="sec">00</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="start">
+
+
+            <button class="starte">start</button>
+            <button class="stope">stop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
