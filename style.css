@@ -60,9 +60,7 @@ button{
 /* jaha timner he */
 .container {
     background: url(https://images.unsplash.com/photo-1518281420975-50db6e5d0a97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat center center fixed;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
+
     background-size: cover;
     height: 100vh;
 
@@ -89,9 +87,7 @@ padding: 0 150px 50px 150px;
 .timee ul li {
     padding:0 20px ;
 }
-/* .time ul li .value{
-    padding: 0 10px;
-} */
+
 
 .submit{
     margin: 23px -101px -15px 0;

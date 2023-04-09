@@ -17,13 +17,6 @@ var once = true;
 function timer() {
     msec++;
 
-
-    // day < 10 ? day = '0' + day : day = day;
-    // hr < 10 ? hr = '0' + hr : hr = hr;
-    // min < 10 ? min = '0' + min : min = min;
-    // sec < 10 ? sec = '0' + sec : sec = sec;
-
-
     if (msec >= 100) {
         sec = sec + Number.parseInt(msec / 100)
         msec = msec % 100;
@@ -44,34 +37,22 @@ function timer() {
         day = day + Number.parseInt(hr / 24)
         hr = hr % 24;
 
-    } 
-    
+    }
 
-    var arr=[day,hr,min,sec];
-    var arr2=[dday,dhr,dmin,dsec];
-    for (var i=0; i<arr.length; i++) {
-        if (arr[i]<10 ){
-            arr2[i].innerHTML='0'+arr[i];
+    var arr = [day, hr, min, sec];
+    var arr2 = [dday, dhr, dmin, dsec];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < 10) {
+            arr2[i].innerHTML = '0' + arr[i];
         }
-        else{
-            arr2[i].innerHTML=arr[i]
+        else {
+            arr2[i].innerHTML = arr[i]
         }
     }
 
-    dmsec.innerHTML = msec; 
-    // dsec.innerHTML = sec; 
-    // dmin.innerHTML = min; 
-    // dhr.innerHTML = hr;
-    // dday.innerHTML = day;
-
-
-
-
-
+    dmsec.innerHTML = msec;
 
 }
-
-
 
 start.onclick = function () {
     isstop = setInterval(timer, 1);
@@ -82,10 +63,11 @@ stope.onclick = function () {
 }
 reset.onclick = function () {
     clearInterval(isstop)
-    msec =0;
-    sec =  0;
-    min =  0;
+    msec = 0;
+    sec = 0;
+    min = 0;
     hr = 0;
-    day = 0; 
-    dmsec.innerHTML = '0'+msec; dsec.innerHTML ='0'+ sec; dmin.innerHTML ='0'+ min; dhr.innerHTML ='0'+ hr;
-    dday.innerHTML = '0'+ day;}
+    day = 0;
+    dmsec.innerHTML = '0' + msec; dsec.innerHTML = '0' + sec; dmin.innerHTML = '0' + min; dhr.innerHTML = '0' + hr;
+    dday.innerHTML = '0' + day;
+}
