@@ -54,12 +54,18 @@ function timer() {
 
 }
 
+var tostartandstop = true;
 start.onclick = function () {
-    isstop = setInterval(timer, 1);
-
+    if (tostartandstop) {
+        
+        isstop = setInterval(timer, 10);
+        tostartandstop=false;
+    }
 }
 stope.onclick = function () {
-    clearInterval(isstop)
+
+    clearInterval(isstop);
+    tostartandstop=true;
 }
 reset.onclick = function () {
     clearInterval(isstop)
