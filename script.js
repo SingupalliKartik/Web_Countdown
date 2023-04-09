@@ -99,10 +99,16 @@ function timer() {
         }
     }
 }
-
+var tostartandstop = true;
 start.onclick = function () {
-    isstop = setInterval(timer, 1000);
+    if (tostartandstop) {
+        
+        isstop = setInterval(timer, 1000);
+        tostartandstop=false;
+    }
 }
 stope.onclick = function () {
+
     clearInterval(isstop);
+    tostartandstop=true;
 }
