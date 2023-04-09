@@ -12,10 +12,10 @@ const start = document.querySelector('.starte');
 const stope = document.querySelector('.stope');
 const submit = document.querySelector('.submit');
 const reser = document.querySelector('.resete');
-let day = '00';
-let hr = '00';
-let min = '00';
-let sec = '00';
+let day = 0;
+let hr =0;
+let min =0;
+let sec = 0;
 submit.onclick = function () {
     console.log(iday.value.length);
     day = (iday.value);
@@ -52,15 +52,15 @@ remainder.onclick = function () {
 var isstop;
 function timer() {
     if (sec >= 60) {
-        min = min + Number.parseInt(sec / 60)
+        min = Number.parseInt( min)+ Number.parseInt(sec / 60)
         sec = sec % 60;
     }
     if (min >= 60) {
-        hr = hr + Number.parseInt(min / 60)
+        hr = Number.parseInt( hr) + Number.parseInt(min / 60)
         min = min % 60;
     }
     if (hr >= 24) {
-        day = day + Number.parseInt(hr / 24)
+        day = Number.parseInt( day) + Number.parseInt(hr / 24)
         hr = hr % 24;
     }
     sec--;
