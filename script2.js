@@ -76,4 +76,5 @@ reset.onclick = function () {
     day = 0;
     dmsec.innerHTML = '0' + msec; dsec.innerHTML = '0' + sec; dmin.innerHTML = '0' + min; dhr.innerHTML = '0' + hr;
     dday.innerHTML = '0' + day;
+    tostartandstop=true;
 }
