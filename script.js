@@ -1,3 +1,5 @@
+// Element declearation 
+
 const dday = document.querySelector('.day');
 const iday = document.getElementById('iday');
 const dhr = document.querySelector('.hrs');
@@ -12,10 +14,16 @@ const start = document.querySelector('.starte');
 const stope = document.querySelector('.stope');
 const submit = document.querySelector('.submit');
 const reser = document.querySelector('.resete');
+
+// some basic assumtion 
 let day = 0;
 let hr =0;
 let min =0;
 let sec = 0;
+var isstop;
+
+
+// onclick function 
 submit.onclick = function () {
     console.log(iday.value.length);
     day = (iday.value);
@@ -40,6 +48,7 @@ submit.onclick = function () {
     }
 
 }
+// style onclick of remainder
 var isreminder = false;
 remainder.onclick = function () {
     isreminder = true;
@@ -49,7 +58,8 @@ remainder.onclick = function () {
     remainder.style.color = 'white'
     remainderi.style.color = 'white'
 }
-var isstop;
+
+// main timer
 function timer() {
     if (sec >= 60) {
         min = Number.parseInt( min)+ Number.parseInt(sec / 60)
@@ -99,6 +109,8 @@ function timer() {
         }
     }
 }
+
+// start btn
 var tostartandstop = true;
 start.onclick = function () {
     if (tostartandstop) {
@@ -107,6 +119,8 @@ start.onclick = function () {
         tostartandstop=false;
     }
 }
+
+// stop btn
 stope.onclick = function () {
 
     clearInterval(isstop);
